@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>бебебе</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <audio id="click-sound" src="click.mp3"></audio>
+    <audio id="success-sound" src="success.mp3"></audio>
+
+    <header class="header">
+        <div class="container">
+            <h1>бебебе</h1>
+            <p>Ваше решение для эффективных и быстрых результатов</p>
+            <button class="cta-button" onclick="playClickSound(); scrollToForm()">Начать</button>
+        </div>
+    </header>
+
+    <section class="features">
+        <div class="container">
+            <h2>Почему выбирают нас?</h2>
+            <div class="feature-list">
+                <div class="feature-item">
+                    <h3>Быстрая доставка</h3>
+                    <p>Получите результаты в кратчайшие сроки с нашими оптимизированными услугами.</p>
+                </div>
+                <div class="feature-item">
+                    <h3>Надёжные эксперты</h3>
+                    <p>Работайте с профессионалами, которые знают своё дело.</p>
+                </div>
+                <div class="feature-item">
+                    <h3>Поддержка 24/7</h3>
+                    <p>Мы всегда рядом, чтобы помочь вам в любое время.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="contact-form" id="contact-form">
+        <div class="container">
+            <h2>Оставьте заявку</h2>
+            <p>Заполните свои данные, чтобы начать работу.</p>
+            <form onsubmit="handleSubmit(event)">
+                <input type="text" id="name" placeholder="Ваше имя" required>
+                <input type="email" id="email" placeholder="Ваш email" required>
+                <button type="submit" onclick="playClickSound()">Отправить</button>
+            </form>
+            <p id="form-message" class="form-message"></p>
+        </div>
+    </section>
+
+    <footer class="footer">
+        <div class="container">
+            <p>&copy; 2024 Наш сервис. Все права защищены.</p>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
